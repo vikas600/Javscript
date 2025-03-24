@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur code</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+
+
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1)
+
+    div.setAttribute("title", "generated title")
+    div.style.backgroundColor = "green"
+    div.style.padding = "12px"
+
+    //    div.innerText="chai aur code"
+    const addText = document.createTextNode("Chai aur code")
+    div.appendChild(addText)
+    document.body.appendChild(div)
+
+    const h1 = document.createElement('h1')
+    h1.style.color = "aqua";
+    const addTextt = document.createTextNode("Hello world!")
+    h1.appendChild(addTextt);
+    document.body.appendChild(h1)
+
+    const p = document.createElement('p');
+    const add = document.createTextNode("Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores accusamus labore eveniet, cum facere explicabo vitae eligendi animi quidem magnam exercitationem ex totam, nesciunt quam pariatur doloribus! Blanditiis, rerum voluptas!")
+
+    p.appendChild(add);
+    document.body.appendChild(p)
+    p.style.backgroundColor="blue",
+    p.style.color="black"
+
+</script>
+
+</html>
